@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>اليوم السابع </title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.428571429;
+            width: 100%;
+            background-color: #c31e1e;
+        }
+
+        div.mydiv1 {
+            border-top: 1px solid #cdcdcd;
+            background-color: #f8f9f9;
+            height: 60px;
+            width: 100%;
+            margin-top: -8px;
+
+        }
+
+        div.mydiv1 div {
+            display: inline;
+            float: right;
+            margin-right: 10px;
+            padding-top: 12px;
+        }
+
+        .div1 {
+            padding-right: 450px;
+        }
+
+        .div2 {
+            border-left: 1px solid #cdcdcd;
+            padding-left: 30px;
+            padding-right: 80px;
+
+        }
+
+        .div3 {
+            padding-right: 100px;
+        }
+
+        .myul1 {
+            background-color: #333;
+            display: inline;
+            /* display: -webkit-inline-box; */
+            /* margin-right: 10px; */
+            float: right;
+            padding-top: 3px;
+            list-style: none;
+            position: relative;
+            width: 100%;
+            height: 70px;
+            margin-top: -3px;
+        }
+
+        .myul1 li {
+            display: inline-block;
+        }
+
+        ul.myul1 a {
+            text-decoration: none;
+        }
+
+        ul.myul2 {
+            list-style: none;
+            background-color: #333;
+            display: none;
+            width: 150px;
+            height: 980px;
+            position: absolute;
+
+        }
+
+        ul.myul2 h2 {
+            color: white;
+
+        }
+
+        ul.myul2 a {
+            text-decoration: none;
+        }
+
+        .dropdown:hover .myul2 {
+            display: block;
+            z-index: 10px;
+            height: 980px;
+        }
+
+        .container {
+            display: block;
+            width: 100%;
+            background-color: #333;
+        }
+
+        /* .d5 img{
+            display: -webkit-inline-box;
+        }
+        .myul1 h2{
+            display:-webkit-inline-box;
+         }  */
+        div.myd {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .l1 img {
+            margin-left: 5px;
+            margin-top: 11px;
+            display: inline-block;
+        }
+
+        .l1 h2 {
+            margin-top: 0;
+            display: inline-block;
+        }
+
+
+        div.right {
+            width: 160px;
+            height: 600px;
+            float: right;
+            margin-right: 175px;
+            margin-top: 30px;
+            position: fixed;
+
+        }
+
+        div.left {
+            width: 160px;
+            height: 600px;
+            float: left;
+            margin-left: 175px;
+            margin-top: 50px;
+            z-index: 10px;
+        }
+
+        div.right img {
+            width: 160px;
+            height: 600px;
+        }
+
+        div.left img {
+            width: 160px;
+            height: 600px;
+        }
+
+        div.div_logo {
+            width: 100%;
+            height: 160px;
+            display: block;
+            background-color: white;
+            margin-top: 70px;
+
+
+        }
+
+        div.div_logo .logo1 {
+            width: 200px;
+            height: 140px;
+            margin: 11px 200px 0px 0px;
+            padding: 9px 0px;
+            float: right;
+
+        }
+
+        div.div_logo .logo1 img {
+            width: 200px;
+            height: 100px;
+        }
+
+        div.div_logo .logo2 {
+            width: 240px;
+            height: 119px;
+            padding: 0px 15px;
+            margin-right: 30px;
+            float: right;
+            margin-top: 15px;
+
+        }
+
+        div.div_logo .logo3 {
+            width: 468px;
+            height: 110px;
+            padding: 5px;
+            float: left;
+            border: 1px solid rgb(226, 226, 226);
+            background: rgb(240, 240, 240);
+            margin-left: 290px;
+
+        }
+
+        div.divs img {
+            margin-top: 10px;
+        }
+
+        div.divc {
+            width: 320px;
+            height: 40px;
+            color: #333333;
+            font: 14px 'Droid Arabic Kufi';
+            padding: 0px 15px;
+            float: left;
+            position: relative;
+        }
+
+        div.divc input {
+            width: 232px;
+            height: 25px;
+            background-color: #ffffff;
+            padding: 3px;
+            direction: rtl;
+            border-radius: 8px;
+            margin-top: 8px;
+            margin-right: -205px;
+        }
+
+        div.divc button {
+            width: 54px;
+            height: 22px;
+            background: none;
+            border: none;
+
+        }
+
+        div.divbu img {
+            width: 54px;
+            height: auto;
+            display: block;
+            margin-top: -40px;
+            margin-right: 35px;
+
+        }
+
+        div.divs {
+            background-color: #333333;
+            width: 100%;
+            height: 48px;
+        }
+
+        div.divb {
+            background-color: #fff;
+            width: 1000px;
+            height: 10200px;
+            margin-top: -10px;
+        }
+
+        div.divm {
+            width: 970px;
+            position: relative;
+            height: 100px;
+            background: rgb(240, 240, 240);
+            margin: 10px auto;
+            border: 1px solid rgb(226, 226, 226);
+            text-align: -webkit-center;
+            top: 7px;
+        }
+
+        div.divm img {
+            width: 728px;
+            height: 90px;
+            z-index: 5px;
+            top: 5px;
+            position: relative;
+            left: 0px;
+            right: 35px;
+            display: inline-block;
+        }
+
+        div.myd12 {
+            background-color: #5d5d5d;
+            width: 400px;
+            height: 275px;
+            float: right;
+            color: #333333;
+            font: 14px "Droid Arabic Kufi";
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+
+        div.my1 img {
+            width: 380px;
+            height: 200px;
+            vertical-align: middle;
+        }
+
+        div.my2 {
+            background-color: #de2323;
+            border-top: 2px solid #000;
+            height: 55px;
+            width: 380px;
+            padding: 5px;
+        }
+
+        div.my2 a {
+            display: block;
+            height: 48px;
+            margin: 0 5px;
+            overflow: hidden;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 14px;
+            text-align: justify;
+            text-decoration: none;
+        }
+
+        div.mydt {
+
+            width: 235px;
+            height: 287px;
+            font: 14px "Droid Arabic Kufi";
+            float: right;
+            margin-top: 10px;
+        }
+
+        div.my3 {
+            background-color: #de2323;
+            /* background-image: url(https://img.youm7.com/images/general/mainNewsLinksBg.gif?1); */
+            background-position: right top;
+            border-image: none;
+            border-style: solid none solid solid;
+            border-width: 2px medium 2px 2px;
+            margin: 5px 0px 5px 5px;
+            width: 230px;
+
+        }
+
+        div.my3 h3 {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 19px;
+            text-align: right;
+            padding-left: 5px;
+            text-decoration: none;
+            display: block;
+            width: 225px;
+            height: 42px;
+            margin: 11px 5px 8px;
+            overflow: hidden;
+
+        }
+
+        div.my4 {
+            background-color: #444;
+            /* background-image: url(https://img.youm7.com/images/general/mainNewsLinksBg.gif?1); */
+            background-position: right top;
+            border-image: none;
+            border-style: solid none solid solid;
+            border-width: 2px medium 2px 2px;
+            margin: 5px 0px 5px 5px;
+            width: 230px;
+
+        }
+
+        div.my4 h3 {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 19px;
+            text-align: right;
+            padding-left: 5px;
+            text-decoration: none;
+            display: block;
+            width: 225px;
+            height: 42px;
+            margin: 11px 5px 8px;
+            overflow: hidden;
+
+        }
+
+        div.my5 {
+            background-color: #444;
+            /* background-image: url(https://img.youm7.com/images/general/mainNewsLinksBg.gif?1); */
+            background-position: right top;
+            border-image: none;
+            border-style: solid none solid solid;
+            border-width: 2px medium 2px 2px;
+            margin: 5px 0px 5px 5px;
+            width: 230px;
+
+        }
+
+        div.my5 h3 {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 19px;
+            text-align: right;
+            padding-left: 5px;
+            text-decoration: none;
+            display: block;
+            width: 225px;
+            height: 42px;
+            margin: 11px 5px 8px;
+            overflow: hidden;
+
+        }
+
+        div.my6 {
+            background-color: #444;
+            /* background-image: url(https://img.youm7.com/images/general/mainNewsLinksBg.gif?1); */
+            background-position: right top;
+            border-image: none;
+            border-style: solid none solid solid;
+            border-width: 2px medium 2px 2px;
+            margin: 5px 0px 5px 5px;
+            width: 230px;
+
+        }
+
+        div.my6 h3 {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 19px;
+            text-align: right;
+            padding-left: 5px;
+            text-decoration: none;
+            display: block;
+            width: 225px;
+            height: 42px;
+            margin: 11px 5px 8px;
+            overflow: hidden;
+
+        }
+
+        div.my7 {
+            /*width: 320px;*/
+            height: 250px;
+            margin: 10px 650px 10px 30px;
+            padding-left: 0;
+            padding: 10px;
+            z-index: 2;
+            border: 1px solid #e2e2e2;
+            margin-top: 30px;
+        }
+
+
+        div.divl {
+            background-color: #333333;
+            width: 970px;
+            height: 27px;
+            font: 14px 'Droid Arabic Kufi';
+            margin-top: 41px;
+        }
+
+        /*         div.divt{
+            color: #f8f9f9;
+            float: right;
+            margin-left: 900px;
+            margin-top: -10px;
+            margin-right: 5px;
+            font-size: 17px;
+            font-family: 'arial';
+            font-weight: bold;
+        } */
+
+        div.divl label {
+            color: white;
+            text-align: center;
+            line-height: 22px;
+            display: block;
+            float: right;
+            cursor: pointer;
+            background-color: #3b3b3b;
+            margin-left: 5px;
+            margin-top: 0px;
+            width: 22px;
+            font-family: 'arial';
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        div.divl .label {
+            margin-right: 300px;
+        }
+
+        div.divl .increase {
+            background-color: #3b3b3b;
+            background-image: url(https://img.youm7.com/images/prev-play.png?2);
+            background-repeat: no-repeat;
+            cursor: pointer;
+            float: left;
+            height: 22px;
+            margin-left: 5px;
+            margin-top: 0px;
+            width: 22px;
+        }
+
+        div.divl .play {
+            background-color: #3b3b3b;
+            background-image: url(https://img.youm7.com/images/pause-pause.png?2);
+            background-repeat: no-repeat;
+            cursor: pointer;
+            float: left;
+            height: 22px;
+            margin-left: 5px;
+            margin-top: 0px;
+            width: 22px;
+        }
+
+        div.divl .decrease {
+            background-color: #3b3b3b;
+            background-image: url(https://img.youm7.com/images/forward-play.png?2);
+            background-repeat: no-repeat;
+            cursor: pointer;
+            float: left;
+            height: 22px;
+            margin-left: 5px;
+            margin-top: 0px;
+            width: 22px;
+        }
+
+        table.table1 span {
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+            background-color: #fff;
+            text-align: center;
+            line-height: 18px;
+            display: block;
+            float: right;
+            cursor: pointer;
+            height: 18px;
+            width: 18px;
+            color: #000;
+            font-family: 'arial';
+            font-weight: bold;
+            font-size: 11px;
+            border-radius: 5px;
+        }
+
+        table.table1 a {
+            text-decoration: none;
+            color: #428bca;
+        }
+
+        table.table1 img {
+            border-radius: 3px;
+            width: 115px;
+            display: block;
+            height: 90px;
+        }
+
+        table.table1 img:hover {
+            opacity: 0.5;
+        }
+
+        table.table1 {
+            float: right;
+            margin-right: 15px;
+            margin-top: 3px;
+        }
+
+        div.divbuttom {
+            width: 965px;
+            height: 30px;
+            background-color: #333333;
+            line-height: 30px;
+            direction: rtl;
+            bottom: -2px;
+            color: #fff;
+            font-family: 'arial';
+            font-size: 20px;
+            font-weight: bold;
+            left: 0;
+            padding: 0;
+            text-align: center;
+            position: relative;
+
+            margin-top: 190px;
+        }
+
+        div.divbuttom p {
+            margin-top: 30px;
+        }
+
+        div.divimg {
+            background: rgb(240, 240, 240);
+            margin: 10px auto;
+            border: 1px solid rgb(226, 226, 226);
+            width: 965px;
+            position: relative;
+            text-align: -webkit-center;
+            height: 100px;
+        }
+
+        div.divh h2 a {
+            font-family: 'Droid Arabic Kufi', Tahoma;
+            font-size: 15px;
+            color: #fff;
+            display: block;
+            font-weight: bold;
+
+        }
+
+        div.divh a {
+            text-decoration: none;
+            float: right;
+        }
+
+        div.divh h2 {
+            background-color: #333333;
+            margin: 0;
+            padding: 6px 10px;
+            color: #fff;
+            border-right: 10px solid #8e8e8e;
+            width: 540px;
+            height: 25.2px;
+            margin-top: 160px;
+            float: right;
+            margin-right: 15px;
+        }
+
+        table.table2 {
+            width: 570px;
+            height: 866px;
+            float: right;
+            margin-right: 15px;
+        }
+
+        table.table2 .t1 {
+            width: 570px;
+            height: 160px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-bottom: 2px solid #fff;
+        }
+
+        table.table2 .t1 td {
+            width: 367.39px;
+            height: 90.8px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid #fff;
+        }
+
+        table.table2 .t1 img {
+            width: 170px;
+            height: 130px;
+            margin-left: 10px;
+            border: 1px solid #999;
+        }
+
+        table.table2 .t1 a {
+            text-align: right;
+            color: #df2829;
+            text-decoration: none;
+            font-weight: bold;
+            width: 367.39px;
+            height: 90.8px;
+            font: 20px 'Helvetica Neue', Helvetica, arial;
+            float: left;
+            margin-top: -138px;
+            margin-left: -10px;
+        }
+
+
+        table.table2 .t2 {
+            height: 230px;
+            width: 570px;
+
+
+        }
+
+        table.table2 .t2 td {
+            width: 285px;
+            height: 230px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid #fff;
+        }
+
+        table.table2 .t2 img {
+            width: 90px;
+            height: 120px;
+            margin-left: 10px;
+            float: right;
+            border: 1px solid #999;
+        }
+
+        table.table2 .t2 a {
+            width: 148.6px;
+            height: 162px;
+            color: #000000;
+            text-decoration: none;
+            text-align: right;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+        table.table2 .t3 {
+            height: 230px;
+            width: 570px;
+
+
+        }
+
+        table.table2 .t3 td {
+            width: 285px;
+            height: 230px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid #fff;
+        }
+
+        table.table2 .t3 img {
+            width: 90px;
+            height: 120px;
+            margin-left: 10px;
+            float: right;
+            border: 1px solid #999;
+        }
+
+        table.table2 .t3 a {
+            width: 148.6px;
+            height: 162px;
+            color: #df2829;
+            text-decoration: none;
+            text-align: right;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+        table.table2 .t4 {
+            width: 570px;
+            height: 22px;
+            background-color: #f0f0f0;
+            clear: both;
+            direction: ltr;
+            padding: 3px 15px;
+        }
+
+        table.table2 .t4 img {
+            width: 55px;
+            height: 16px;
+        }
+
+        table.table2 .t4 a {
+            text-decoration: none;
+            width: 540px;
+            height: 16px;
+        }
+
+        table.table3 {
+            width: 570px;
+            height: 1050;
+            float: right;
+            margin-right: 15px;
+            margin-top: 17px;
+        }
+
+        table.table3 .tr1 {
+            width: 558px;
+            height: 25.2px;
+            background-color: #5d5d5d;
+        }
+
+        table.table3 .tr1 h2 {
+            margin: 0px;
+            padding: 6px 10px;
+            color: #fff;
+            border-right: 10px solid #8e8e8e;
+            font-size: 30px 'Helvetica Neue', Helvetica, arial;
+
+        }
+
+        table.table3 .tr1 a {
+            font-family: 'Droid Arabic Kufi', Tahoma;
+            font-size: 12px;
+            color: #fff;
+            display: block;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        table.table3 .tr2 {
+            width: 558px;
+            height: 220px;
+            background-color: #f0f0f0;
+        }
+
+        table.table3 .tr2 img {
+            width: 170px;
+            height: 130px;
+            display: block;
+            float: none;
+            margin: 0px auto;
+            border: 1px solid #999;
+        }
+
+        table.table3 .tr2 a {
+            text-decoration: none;
+            width: 168px;
+            height: 65px;
+            line-height: 21px;
+            color: #df2829;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            overflow: hidden;
+            text-align: right;
+            display: block;
+            margin: 5px;
+        }
+
+        table.table3 .tr3 {
+            width: 558px;
+            height: 195px;
+            background-color: #f0f0f0;
+        }
+
+        table.table3 .tr3 img {
+            width: 140px;
+            height: 110px;
+            display: block;
+            float: none;
+            margin: 0px auto;
+            border: 1px solid #999;
+        }
+
+        table.table3 .tr3 a {
+            text-decoration: none;
+            width: 168px;
+            height: 65px;
+            line-height: 18px;
+            color: #3a3a3a;
+            font-family: Tahoma;
+            font-weight: normal;
+            font-size: 13px;
+            overflow: hidden;
+            text-align: right;
+            display: block;
+            margin: 5px;
+        }
+
+        table.table3 .trm {
+            width: 558px;
+            height: 23.6px;
+            background-color: #f0f0f0;
+            direction: ltr;
+            padding: 3px 15px;
+            clear: both;
+            border-top: 2px solid #fff;
+        }
+
+        table.table3 .trm a {
+            width: 156px;
+            height: 16px;
+            text-decoration: none;
+
+        }
+
+        table.table3 .trm img {
+            width: 55px;
+            height: 16px;
+            margin: 0px;
+            display: block;
+            margin-left: 2%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="mydiv1">
+                <div class="div1">
+                    <a href="https://www.youm7.com/">
+                        <img src="https://img.youm7.com/ArticleImgs/2020/2/26/8847-youm7logofixed.png"
+                            alt="اليوم السابع">
+                    </a>
+                </div>
+                <div class="div2">
+                    <a href="https://www.youm7.com/home/advert">
+                        <img src="https://www.youm7.com/images/newHeader/ad.png" alt="اعلان">
+                    </a>
+
+                </div>
+                <div class="div3">
+                    <span>
+                        <img src="D:\Web\asmaa_task4\img2.png" alt="" width="28px" height="20px"> الثلاثاء، 10 أكتوبر
+                        2023
+                        <img src="D:\Web\asmaa_task4\img1.png" alt="" width="20px" height="20px"> 08:05 م
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="myul1">
+                    <div class="myd">
+                        <div class="d5">
+                            <li class="l1">
+                                <a href="https://www.youm7.com/" style="color: white;">
+                                    <img src="D:\Web\asmaa_task4\home.png" alt="الرئيسيه" width="30px" height="30px">
+                                    <h2>
+                                        الرئيسية&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%A7%D8%AC%D9%84%D8%A9/65/1"
+                                    style="color: white;">
+                                    <h2>
+                                        عاجل&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/Section/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/319/1"
+                                    style="color: white;">
+                                    <h2>
+                                        سياسة&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/Section/%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1-%D9%85%D8%B5%D8%B1%D9%8A%D8%A9/97/1"
+                                    style="color: white;">
+                                    <h2>
+                                        تقارير&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/Section/%D8%AD%D9%88%D8%A7%D8%AF%D8%AB/203/1"
+                                    style="color: white;">
+                                    <h2>
+                                        حوادث&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/Election/%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9"
+                                    style="color: red;">
+                                    <h2>
+                                        الانتخابات الرئاسية&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/videos" style="color: white;">
+                                    <h2>
+                                        تليفزيون&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/Section/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D9%88%D8%A8%D9%88%D8%B1%D8%B5%D8%A9/297/1"
+                                    style="color: white;">
+                                    <h2>
+                                        اقتصاد&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/Section/%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D9%88%D9%85%D9%84%D9%81%D8%A7%D8%AA/12/1"
+                                    style="color: white;">
+                                    <h2>
+                                        تحقيقات &nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/298/1"
+                                    style="color: white;">
+                                    <h2>
+                                        رياضة&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="https://www.youm7.com/Section/%D9%83%D8%B1%D8%A9-%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9/332/1"
+                                    style="color: white;">
+                                    <h2>
+                                        كرة عالمية&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="dropdown">
+                                <a href="#" style="color: white;">
+                                    <h2>
+                                        المزيد&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </h2>
+                                </a>
+                                <ul class="myul2">
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/88/1">
+                                            <h2>
+                                                عرب
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9/286/1">
+                                            <h2>
+                                                عالم
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D9%83%D8%A7%D8%B1%D9%8A%D9%83%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85/192/1">
+                                            <h2>
+                                                كاريكاتير
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="https://www.youm7.com/Section/%D9%81%D9%86/48/1">
+                                            <h2>
+                                                فن
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D8%AD%D8%B8%D9%83-%D8%A7%D9%84%D9%8A%D9%88%D9%85/330/1">
+                                            <h2>
+                                                حظك اليوم
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D8%AA%D9%84%D9%8A%D9%81%D8%B2%D9%8A%D9%88%D9%86/251/1">
+                                            <h2>
+                                                تليفزيون
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="https://www.youm7.com/Section/%D8%AB%D9%82%D8%A7%D9%81%D8%A9/94/1">
+                                            <h2>
+                                                ثقافة
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B9%D8%A7%D8%AA/89/1">
+                                            <h2>
+                                                مرأة ومنوعات
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D8%B5%D8%AD%D8%A9-%D9%88%D8%B7%D8%A8/245/1">
+                                            <h2>
+                                                صحة
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D8%A3%D9%84%D8%A8%D9%88%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9/291/1">
+                                            <h2>
+                                                ألبومات
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="https://www.youm7.com/Editor/Alleditors">
+                                            <h2>
+                                                مقالات
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D8%B9%D9%84%D9%88%D9%85-%D9%88-%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/328/1">
+                                            <h2>
+                                                تكنولوجيا
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a
+                                            href="https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A7%D8%AA/296/1">
+                                            <h2>
+                                                محافظات
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="https://www.youm7.com/Section/%D9%81%D9%8A%D8%AF%D9%8A%D9%88-7/355/1">
+                                            <h2>
+                                                فديو7
+                                            </h2>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="div_logo" align="center">
+                <div class="logo1">
+                    <a href="https://www.youm7.com/">
+                        <img src="D:\Web\asmaa_task4\logooctober50.png" alt="اليوم السابع ">
+                    </a>
+                </div>
+                <div class="logo2">
+                    <img src="D:\Web\asmaa_task4\tarwesadesktop2023.webp" alt="">
+                </div>
+                <div class="logo3">
+                    <a href="https://silva-compound.com/ar/?ref=MzU2LTY">
+                        <img src="D:\Web\asmaa_task4\13835988414697623653.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="divs">
+
+                <div>
+                    <a href="https://plus.youm7.com/">
+                        <img src="D:\Web\asmaa_task4\tickerTitleAni.webp" alt="">
+                    </a>
+                    <a href="https://www.youm7.com/rss/rss">
+
+                        <img src="D:\Web\asmaa_task4\talk.png" alt="" height="30px">
+                    </a>
+                    <a href="https://www.youm7.com/rss/rss">
+
+                        <img src="D:\Web\asmaa_task4\tickerRSS.webp" alt="">
+                    </a>
+
+                    <div style="float: left;">
+                        <form action="https://www.youm7.com/Home/Search?allwords">
+                            <div class="divc">
+                                <input type="text">
+                                <div class="divbu">
+                                    <button type="button">
+                                        <img src="D:\Web\asmaa_task4\searchButtonBG.webp" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="right">
+        <a href="https://www.facebook.com/Turathna.Exhibition">
+            <img src="D:\Web\asmaa_task4\6701647461935746484.jpg" alt="تراثنا">
+        </a>
+    </div>
+    <div class="left">
+        <a href="https://www.facebook.com/Turathna.Exhibition">
+
+            <img src="D:\Web\asmaa_task4\6701647461935746484.jpg" alt="تراثنا">
+        </a>
+    </div> -->
+
+    <center>
+        <div class="divb">
+            <div class="divm">
+                <a href="https://www.facebook.com/Turathna.Exhibition">
+                    <img src="D:\Web\asmaa_task4\photo2.png" alt="">
+                </a>
+            </div>
+            <div class="myd12">
+                <div class="my1">
+                    <a
+                        href="https://www.youm7.com/story/2023/10/12/%D9%81%D9%8A%D8%AA%D9%88%D8%B1%D9%8A%D8%A7-%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9-%D8%B2%D8%A7%D9%85%D8%A8%D9%8A%D8%A7-%D8%AC%D8%A7%D8%A1%D8%AA-%D8%B5%D8%B9%D8%A8%D8%A9-%D9%83%D9%85%D8%A7-%D8%AA%D9%88%D9%82%D8%B9%D9%86%D8%A7-%D9%88%D8%A7%D9%84%D9%81%D9%88%D8%B2-%D9%86%D8%AA%D9%8A%D8%AC%D8%A9-%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9/6335965">
+                        <img src="img3.jpg" alt="">
+                    </a>
+
+                </div>
+                <div class="my2">
+                    <h3>
+                        <a
+                            href="https://www.youm7.com/story/2023/10/12/%D9%81%D9%8A%D8%AA%D9%88%D8%B1%D9%8A%D8%A7-%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9-%D8%B2%D8%A7%D9%85%D8%A8%D9%8A%D8%A7-%D8%AC%D8%A7%D8%A1%D8%AA-%D8%B5%D8%B9%D8%A8%D8%A9-%D9%83%D9%85%D8%A7-%D8%AA%D9%88%D9%82%D8%B9%D9%86%D8%A7-%D9%88%D8%A7%D9%84%D9%81%D9%88%D8%B2-%D9%86%D8%AA%D9%8A%D8%AC%D8%A9-%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9/6335965">
+                            أكد البرتغالي روي فيتوريا المدير الفني لمنتخب مصر أن فوز الفراعنة الودي على زامبيا بهدف دون
+                            رد جاء أمام منافس صعب
+                        </a>
+                    </h3>
+                </div>
+            </div>
+            <div class="mydt">
+                <div class="my3">
+                    <h3>
+                        فيتوريا: مباراة زامبيا جاءت صعبة كما توقعنا والفوز نتيجة طبيعية
+                    </h3>
+                </div>
+                <div class="my4">
+                    <h3>
+                        أكرم القصاص: مصر أكثر دولة حامية للقضية الفلسطينية والجيش المصرى يحمى ولا يهدد
+                    </h3>
+                </div>
+                <div class="my5">
+                    <h3>
+                        اليوم السابع: الرئيس السيسى خلال حفل تخرج الكليات العسكرية: لا يمكن المساس بمصر
+                    </h3>
+                </div>
+                <div class="my6">
+                    <h3>
+                        كاريكاتير اليوم السابع يسلط الضوء على حفل تخرج دفعة جديدة من الكليات العسكرية
+                    </h3>
+                </div>
+            </div>
+            <div class="my7">
+                <a
+                    href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjss14svVzlJdIcqtEYGEAgqKjjDf9Vso4_hXWoQxk-e_xbiIiZKhdRgGgWZQAZ597B-1avlxlxC-UkeCWgW7UrClMwuopftXsZHh1JQwFdZuFhkV7ZRo0jMNSomsOgwUSnNtjbN2bj6xZWyJGsAFz4KjRRCRF7zvyUr9YEim-JSiINTi30--11fCilvarIT9WWPBWkwJho19E3-5e2mweB7f-qd0K75pLNF4sw8Xo-QWjl5LspOiSBrLAPa0NHsHwrIf4Xqbi6CRPz6aWeHRwcWN66jZ__5vda3Yhw0AMCM1n6mxmAEzOSRb0XwxbO4vu1BaMNmr&sai=AMfl-YTqCfD9S9sVCpAgX0PIGTXXzW7AiGKcyKyP85iKoOyA-jMc5AICiNrA05CezVrzfhfdYhoowDCC_AU5j3jLJx6sx7ORd2s32nNuCvNpKUJCFbOMY2_hzmCsBtwpYMXup59sgQE&sig=Cg0ArKJSzCpF6IMvtInK&fbs_aeid=[gw_fbsaeid]&adurl=https://www.youm7.com/&nm=2&nx=130&ny=-154&mb=2">
+                    <img src="ad5.jpg" alt="">
+                </a>
+            </div>
+
+
+            <div>
+                <div class="divl">
+                    <!--  <div class="divt">
+                        عاجل
+                    </div> -->
+                    <div class="label">
+                        <label for="">1</label>
+                        <label for="">2</label>
+                        <label for="">3</label>
+                        <label for="">4</label>
+                        <label for="">5</label>
+                        <label for="">6</label>
+                        <label for="">7</label>
+                        <label for="">8</label>
+                        <label for="">9</label>
+                        <label for="">10</label>
+                        <label for="">11</label>
+                        <label for="">12</label>
+                        <label for="">13</label>
+                    </div>
+                    <div>
+                        <div class="increase"></div>
+                        <div class="play"></div>
+                        <div class="decrease"></div>
+                    </div>
+                </div>
+                <table class="table1">
+                    <tr>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D8%B1%D8%A3%D8%B3-%D8%A7%D9%84%D8%A3%D8%AE%D8%B6%D8%B1-%D9%8A%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%D8%A9-%D8%AA%D9%8F%D9%87%D8%AF%D8%AF-%D8%B9%D9%85%D8%A7%D9%84%D9%82%D8%A9/6337891">
+                                <img src="c1.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D9%81%D8%AA%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D8%B4%D8%AD-%D9%84%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D9%8A%D8%A9/6331412">
+                                <img src="c2.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D8%A7%D9%84%D8%A5%D8%AD%D8%B5%D8%A7%D8%A1-33-3-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9%D8%A7%D9%8B-%D9%81%D9%89-%D9%82%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9-%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A7-%D8%AE%D9%84%D8%A7%D9%84/6337856">
+                                <img src="c3.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D9%8A%D8%B4%D8%AF%D8%AF-%D8%B9%D9%84%D9%89-%D8%B6%D8%B1%D9%88%D8%B1%D8%A9-%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D9%81%D9%89-%D8%BA%D8%B2%D8%A9-%D9%88%D8%A5%D8%AF%D8%AE%D8%A7%D9%84/6337863">
+                                <img src="c4 5.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D9%88%D8%B2%D9%8A%D8%B1-%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A7-%D9%86%D8%AA%D8%B7%D9%84%D8%B9-%D9%84%D8%B2%D9%8A%D8%A7%D8%AF%D8%A9-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%86%D8%A7-%D9%81%D9%89-%D9%85%D8%B5%D8%B1-%D9%84%D9%8015-%D9%85%D9%84%D9%8A%D8%A7%D8%B1/6337849">
+                                <img src="c4 5.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D9%8A%D8%AA%D9%81%D9%82%D8%AF-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%85%D8%B4%D9%89-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D9%89-%D8%A8%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%A8%D9%88%D8%B1%D8%B3%D8%B9%D9%8A%D8%AF/6337795">
+                                <img src="c6.jpg" alt="">
+                            </a>
+                        </td>
+                        <td rowspan="2" colspan="2" style="width: 255px; height: 180px;">
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D8%A7%D9%84%D8%A5%D8%B3%D8%B9%D8%A7%D9%81-%D9%88%D8%A7%D9%84%D8%B7%D9%88%D8%A7%D8%A6-%D8%A8%D8%BA%D8%B2%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%89-%D9%82%D8%AA%D9%84-10-%D9%85%D8%B3%D8%B9%D9%81%D9%8A%D9%86-%D9%88%D8%A3%D8%B5%D8%A7%D8%A8-27/6337804">
+                                <img src="c13.jpg" alt="" style="width: 255px; height: 180px;">
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D8%B3%D9%82%D9%88%D8%B7-%D8%A3%D9%85%D8%B7%D8%A7%D8%B1-%D8%BA%D8%B2%D9%8A%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A8%D8%AD%D9%8A%D8%B1%D8%A9-%D9%88%D8%B7%D9%88%D8%A7%D8%B1%D8%A6-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D9%84%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%AA%D9%82%D9%84%D8%A8%D8%A7%D8%AA/6337864">
+                                <img src="c7.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/9-%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8-%D8%A3%D9%87%D9%84%D8%AA-%D9%85%D8%B5%D8%B1-%D8%A8%D8%AC%D8%AF%D8%A7%D8%B1%D8%A9-%D9%84%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A%D8%A9-%D9%84%D8%AE%D9%84%D9%88%D9%87%D8%A7-%D9%85%D9%86/6337797">
+                                <img src="c8.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D8%A7%D8%B3%D8%AA%D9%85%D8%B1%D8%A7%D8%B1-%D8%AA%D8%AF%D9%81%D9%82-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D9%86%D8%B3%D8%A7%D9%86%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D9%85%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B4-%D9%88%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%A3%D8%AD%D9%85%D8%B1-%D9%8A%D9%81%D8%B1%D8%BA/6337873">
+                                <img src="c9.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D9%85%D8%B3%D8%A7%D9%81%D8%A9-%D8%A7%D9%84%D8%B3%D9%83%D8%A9-%D9%84%D8%A3%D9%87%D8%A7%D9%84%D9%8A%D9%86%D8%A7-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%89-%D9%8A%D9%82%D9%88%D8%AF-%D8%A3%D9%83%D8%A8%D8%B1-%D9%82%D8%A7%D9%81%D9%84%D8%A9-%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A7%D8%AA-%D8%A5%D9%86%D8%B3%D8%A7%D9%86%D9%8A%D8%A9/6337771">
+                                <img src="c10.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D9%88%D8%B3%D8%A7%D8%A6%D9%84-%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%B9%D8%A8%D8%B1%D9%8A%D8%A9-%D8%A7%D8%AC%D8%AA%D9%8A%D8%A7%D8%AD-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%89-%D9%84%D8%BA%D8%B2%D8%A9-%D9%8A%D9%82%D8%AA%D8%B1%D8%A8/6337769">
+                                <img src="c11.jpg" alt="">
+                            </a>
+                        </td>
+                        <td>
+                            <a
+                                href="https://www.youm7.com/story/2023/10/14/%D8%AA%D8%B9%D8%B1%D9%81-%D8%B9%D9%84%D9%8A-%D8%B6%D9%8A%D9%88%D9%81-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D9%81%D9%89-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%A1-%D9%85%D8%B9-%D9%82%D8%B5%D9%88%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%8A%D9%84%D8%A9-%D8%B9%D9%84%D9%89/6337862">
+                                <img src="c12.jpg" alt="">
+                            </a>
+                        </td>
+
+                    </tr>
+
+                </table>
+                <div class="divbuttom">
+                    <p>
+                        الإسعاف والطوائ" بغزة: الاحتلال الإسرائيلى قتل 10 مسعفين وأصاب 27 آخرين
+                    </p>
+                </div>
+            </div>
+            <div class="divimg">
+                <a href="https://silva-compound.com/ar/?ref=MzU2LTY">
+                    <img src="d1.jpg" alt="">
+                </a>
+            </div>
+            <div class="divh">
+                <h2>
+                    <a
+                        href="https://www.youm7.com/Section/%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D9%88%D9%85%D9%84%D9%81%D8%A7%D8%AA/12/1">
+                        تحقيقات و ملفات
+                    </a>
+                </h2>
+            </div>
+            <table class="table2">
+                <tr class="t1">
+                    <td colspan="2">
+                        <img src="w1.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/15/%D8%A3%D9%87%D9%85-%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AD%D8%AA%D9%89-%D9%85%D9%86%D8%AA%D8%B5%D9%81-%D8%A7%D9%84%D9%84%D9%8A%D9%84-%D9%87%D9%86%D9%8A%D8%A9-%D9%84%D8%A7-%D9%87%D8%AC%D8%B1%D8%A9/6338093">
+                            أهم الأخبار العالمية والعربية حتى منتصف الليل.. هنية: لا هجرة للفلسطينيين من غزة إلى مصر..
+                            بايدن: نعمل مع مصر والأردن لاستئناف إرسال المساعدات لغزة.. إعلام عبرى: اجتياح الجيش
+                            الإسرائيلى البرى للقطاع يقترب
+                        </a>
+
+                    </td>
+                </tr>
+                <tr class="t2">
+                    <td>
+                        <img src="w2.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/15/%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D8%B1%D9%88%D8%B4%D8%AA%D8%A9-%D8%B9%D9%84%D8%A7%D8%AC-%D8%A3%D9%85%D8%B1%D8%A7%D8%B6-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D8%B3-5-%D8%A3%D9%85%D8%B1%D8%A7%D8%B6-%D9%88%D8%B1%D8%A7%D8%A1/6337687">
+                            وزارة الصحة تكشف روشتة علاج أمراض المدارس.. 5 أمراض وراء تنوع الأعراض والإصابات المرضية بين
+                            الطلاب.. أبرزها آلام المعدة والأنفلونزا والعين الوردية.. وحسام عبدالغفار: يمكن الوقاية
+                            باتباع تعليمات النظافة العام
+                        </a>
+                    </td>
+                    <td>
+                        <img src="w3.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%A3%D8%B4%D9%82%D8%A7%D8%A1-%D8%A8%D8%BA%D8%B2%D8%A9-%D9%8A%D9%86%D8%B7%D9%84%D9%82-%D9%85%D9%86-%D9%85%D8%B5%D8%B1-%D8%AC%D8%B3%D8%B1-%D8%AC%D9%88%D9%89-%D8%AF%D9%88%D9%84%D9%89-%D9%84%D9%86%D9%82%D9%84/6337961">
+                            دعم الأشقاء بغزة ينطلق من مصر.. جسر جوى دولى لنقل المساعدات عبر مطار العريش.. المصريون
+                            يتسابقون لتجهيز الشحنات الإغاثية تمهيدا لإرسالها لضحايا العدوان الإسرائيلي.. ويتضامنون
+                            لتخفيف حدة العنف تجاه الشعب الشقيق
+                        </a>
+                    </td>
+                </tr>
+                <tr class="t3">
+                    <td>
+                        <img src="w4.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%84%D9%80-%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9-%D8%A7%D9%84%D8%A5%D8%AE%D8%A8%D8%A7%D8%B1%D9%8A%D8%A9-%D9%87%D8%AF%D9%86%D8%A9-%D8%A5%D9%86%D8%B3%D8%A7%D9%86%D9%8A%D8%A9-%D8%AA%D8%AF%D8%AE%D9%84-%D8%AD%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0/6338050">
+                            الجامعة العربية لـ"القاهرة الإخبارية": هدنة إنسانية تدخل حيز التنفيذ فى غزة قريبا.. رصدنا
+                            انتهاكات إسرائيلية تصل لجرائم حرب.. هناك حالة جنون من الغرب فى تأييد إسرائيل.. وحل الدولتين
+                            السبيل الوحيد لإنهاء الصراع
+                        </a>
+                    </td>
+                    <td>
+                        <img src="w5.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%B3%D9%82%D8%B7%D8%A7%D8%AA-CNN-%D8%AA%D8%AA%D9%88%D8%A7%D9%84%D9%89-%D9%81%D9%89-%D8%BA%D8%B2%D8%A9-%D9%88%D8%A7%D9%84%D8%AA%D8%B6%D9%84%D9%8A%D9%84-%D8%B9%D8%B1%D8%B6-%D9%85%D8%B3%D8%AA%D9%85%D8%B1-%D9%85%D8%AE%D8%B1%D8%AC-%D9%8A%D9%88%D8%AC%D9%87/6337980">
+                            سقطات "CNN" تتوالى فى غزة.. والتضليل عرض مستمر.. مخرج يوجه مراسلة لـ"إبداء الذعر".. وموفدة
+                            للقناة فى القطاع تزعم وجود أطفال إسرائيليين "مقطوعى الرؤوس".. وتعتذر عبر حسابها الشخصى بعد
+                            انتشار روايتها على نطاق واسع
+                        </a>
+                    </td>
+                </tr>
+                <tr class="t2">
+                    <td>
+                        <img src="w6.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%A7%D9%84%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D8%B1%D8%B6%D9%8A%D8%A9-%D8%AA%D8%B4%D9%87%D8%AF-%D9%83%D8%B3%D9%88%D9%81%D8%A7-%D8%AD%D9%84%D9%82%D9%8A%D8%A7-%D9%84%D9%84%D8%B4%D9%85%D8%B3-%D9%84%D8%A7-%D9%8A%D8%B8%D9%87%D8%B1-%D8%A8%D9%85%D8%B5%D8%B1-%D9%88%D8%A7%D9%84%D9%88%D8%B7%D9%86/6337662">
+                            الكرة الأرضية تشهد كسوفا حلقيا للشمس لا يظهر بمصر والوطن العربى.. يشاهد ككسوف حلقى فى أجزاء
+                            من الولايات المتحدة الأمريكية والمكسيك وكولومبيا والبرازيل.. وقرص القمر يغطى 95.2% من كامل
+                            الشمس عند الذروة
+                        </a>
+                    </td>
+                    <td>
+                        <img src="w7.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%89-%D9%84%D8%AD%D9%85%D8%A7%D8%B3-%D9%84%D8%A7-%D9%87%D8%AC%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%88%D9%84%D8%A7-%D9%85%D9%86/6338003">
+                            رئيس المكتب السياسى لحماس: لا هجرة من الضفة ولا من غزة وأحيى الأشقاء فى مصر .. إسماعيل هنية:
+                            متمسكون بأرضنا وباقون في وطننا ولن نهاجر.. خبراء لـ اليوم السابع: إسرائيل تسعى لتصفية قضية
+                            فلسطين بطرح مشروع التهجير
+                        </a>
+                    </td>
+                </tr>
+                <tr class="t4">
+                    <td colspan="2">
+                        <a
+                            href="https://www.youm7.com/Section/%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D9%88%D9%85%D9%84%D9%81%D8%A7%D8%AA/12/1">
+                            <img src="more.webp" alt="">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <table class="table3">
+                <tr class="tr1">
+                    <td>
+                        <h2>
+                            <a
+                                href="https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%A7%D8%AC%D9%84%D8%A9/65/1">
+                                أخبار عاجلة
+                            </a>
+                        </h2>
+                    </td>
+                    <td>
+                        <h2>
+                            <a href="https://www.youm7.com/Section/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/319/1">
+                                سياسة
+                            </a>
+                        </h2>
+                    </td>
+                    <td>
+                        <h2>
+                            <a href="https://www.youm7.com/Section/%D8%AD%D9%88%D8%A7%D8%AF%D8%AB/203/1">
+                                حوادث
+                            </a>
+                        </h2>
+                    </td>
+                </tr>
+                <tr class="tr2">
+                    <td>
+                        <img src="x1.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%AA%D9%88%D8%B2%D9%8A%D8%B9-%D9%88%D8%AD%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D9%85%D8%A8%D9%83%D8%B1-%D8%B9%D9%86-%D8%B3%D8%B1%D8%B7%D8%A7%D9%86/6335622">
+                            وزارة الصحة تكشف خريطة توزيع وحدات الكشف المبكر عن سرطان الثدى
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x2.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D9%81%D8%B1%D9%8A%D8%AF-%D8%B2%D9%87%D8%B1%D8%A7%D9%86-%D9%83%D9%86%D8%AA-%D8%A3%D8%AA%D9%85%D9%86%D9%89-%D9%88%D8%AC%D9%88%D8%AF-%D8%B9%D8%AF%D8%AF-%D8%A3%D9%83%D8%A8%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D8%B1%D8%B4%D8%AD%D9%8A%D9%86-%D9%84%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D8%A9/6338107">
+                            فريد زهران: كنت أتمنى وجود عدد أكبر من المرشحين للرئاسة
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x3.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%B3%D9%8A%D8%AF%D8%A9-%D8%AA%D8%B7%D9%84%D8%A8-340-%D8%A3%D9%84%D9%81-%D9%85%D8%AA%D8%AC%D9%85%D8%AF-%D9%86%D9%81%D9%82%D8%A7%D8%AA-%D9%88%D8%AA%D8%B9%D9%88%D9%8A%D8%B6-600-%D8%A3%D9%84%D9%81-%D8%AC%D9%86%D9%8A%D9%87/6337603">
+                            سيدة تطلب 340 ألف متجمد نفقات وتعويض 600 ألف جنيه وتلاحق زوجها بـ17 دعوى حبس
+                        </a>
+                    </td>
+                </tr>
+                <tr class="tr3">
+                    <td>
+                        <img src="x4.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%B1%D8%A6%D9%8A%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D9%82%D9%88%D9%85%D9%89-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%89-%D9%85%D8%B5%D8%B1-%D9%84%D9%85-%D8%AA%D8%AD%D8%B0%D8%B1-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%85%D8%B3%D8%A8%D9%82%D8%A7/6337947">
+                            رئيس مجلس الأمن القومى الإسرائيلى: مصر لم تحذر إسرائيل مسبقا بشأن هجوم حماس
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x5.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A%D8%A9-%D8%AA%D9%86%D8%B8%D9%85-%D8%AC%D9%84%D8%B3%D8%A9-%D9%86%D9%82%D8%A7%D8%B4%D9%8A%D8%A9-%D8%AD%D9%88%D9%84-%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D9%88%D8%A7%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9/6338100">
+                            "التنسيقية" تنظم جلسة نقاشية حول تنظيم الإعلام والدعاية الانتخابية
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x6.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%A7%D9%84%D9%85%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%A6%D9%89-%D9%85%D8%A7%D8%B3-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%89-%D9%88%D8%B1%D8%A7%D8%A1-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AE%D8%B2%D9%86-%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83-%D9%81%D9%89-%D8%A7%D9%84%D9%85%D8%B1%D8%AC/6337632">
+                            المعمل الجنائى: ماس كهربائى وراء حريق مخزن بلاستيك فى المرج
+                        </a>
+                    </td>
+                </tr>
+                <tr class="tr3">
+                    <td>
+                        <img src="x7.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D9%85%D8%AA%D8%AD%D8%AF%D8%AB-%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9-%D9%86%D9%88%D8%AC%D9%87-%D8%A7%D9%84%D8%B4%D9%83%D8%B1-%D9%84%D9%85%D8%B5%D8%B1-%D9%88%D9%85%D9%88%D9%82%D9%81%D9%87%D8%A7-%D8%B9%D9%84%D9%89-%D9%85%D8%AF%D8%A7%D8%B1-%D8%B3%D9%86%D9%88%D8%A7%D8%AA/6338079">
+                            متحدث السلطة الفلسطينية: نوجه الشكر لمصر وموقفها على مدار سنوات النضال
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x8.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%85%D8%A4%D8%AA%D9%85%D8%B1-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%B3%D9%8A%D8%B3%D9%89-%D9%8A%D8%AD%D8%B8%D9%89-%D8%A8%D8%AF%D8%B9%D9%85-%D9%88%D8%AA%D8%A3%D9%8A%D9%8A%D8%AF-%D8%B4%D8%B9%D8%A8%D9%89-%D9%83%D8%A8%D9%8A%D8%B1-%D9%85%D9%86/6337780">
+                            حزب المؤتمر: الرئيس السيسى يحظى بدعم وتأييد شعبى كبير من المصريين
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x9.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%AD%D8%A8%D8%B3-%D9%85%D8%AA%D9%87%D9%85-%D8%A8%D8%A7%D8%B3%D8%AA%D8%BA%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D9%81%D9%89-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%84-%D8%A8%D8%A7%D9%84%D8%B3%D9%8A%D8%AF%D8%A9-%D8%B9%D8%A7%D8%A6%D8%B4%D8%A9-15/6337507">
+                            تجديد حبس متهم باستغلال الأطفال فى التسول بالسيدة عائشة 15 يوماً
+                        </a>
+                    </td>
+                </tr>
+                <tr class="tr3">
+                    <td>
+                        <img src="x10.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%A5%D9%81%D8%AA%D8%A7%D8%A1-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D9%84%D8%A5%D8%AB%D9%86%D9%8A%D9%86-%D8%A3%D9%88%D9%84-%D8%A3%D9%8A%D8%A7%D9%85-%D8%B4%D9%87%D8%B1-%D8%B1%D8%A8%D9%8A%D8%B9-%D8%A7%D9%84%D8%A2%D8%AE%D8%B1-%D9%84%D8%B9%D8%A7%D9%85/6337937">
+                            دار الإفتاء تعلن الإثنين أول أيام شهر ربيع الآخر لعام 1445هـ
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x11.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%89-%D9%84%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D8%B9%D8%AF%D9%84-%D9%81%D8%B1%D9%8A%D8%AF-%D8%B2%D9%87%D8%B1%D8%A7%D9%86-%D9%8A%D8%B9%D8%A8%D8%B1-%D8%B9%D9%86-%D9%85%D8%A7-%D9%8A%D8%AD%D8%AA%D8%A7%D8%AC%D9%87/6338055">
+                            المتحدث الرسمى لحزب العدل: فريد زهران يعبر عن ما يحتاجه الوطن
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x12.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%A7%D9%84%D9%85%D8%A4%D8%A8%D8%AF-%D9%84%D8%AC%D9%86%D8%A7%D9%8A%D9%86%D9%89-%D9%84%D8%AD%D9%8A%D8%A7%D8%B2%D8%AA%D9%87-19-%D9%82%D8%B7%D8%B9%D8%A9-%D8%AD%D8%B4%D9%8A%D8%B4-%D9%81%D9%89-%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9/6337995">
+                            المؤبد لجناينى لحيازته 19 قطعة حشيش فى الإسكندرية
+                        </a>
+                    </td>
+                </tr>
+                <tr class="tr3">
+                    <td>
+                        <img src="x13.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D8%AA%D8%B1%D8%B4%D8%AD-%D9%82%D8%A8%D9%84-%D8%B3%D8%A7%D8%B9%D8%A7%D8%AA-%D8%A8%D8%AF%D8%A1-%D8%A7%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D9%84%D9%85%D8%B1%D8%B4%D8%AD%D9%89-%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D8%A9/6337933">
+                            إغلاق باب الترشح قبل ساعات.. بدء الدعاية الانتخابية لمرشحى الرئاسة 9 نوفمبر
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x14.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D9%81%D8%B1%D9%8A%D8%AF-%D8%B2%D9%87%D8%B1%D8%A7%D9%86-%D8%B3%D8%A3%D8%B3%D8%B9%D9%89-%D9%84%D8%A3%D9%86-%D8%AA%D9%83%D9%88%D9%86-%D9%85%D8%B5%D8%B1-%D8%AF%D9%88%D9%84%D8%A9-%D9%85%D8%AF%D9%86%D9%8A%D8%A9-%D8%AF%D9%8A%D9%85%D9%82%D8%B1%D8%A7%D8%B7%D9%8A%D8%A9-%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9/6338036">
+                            فريد زهران: سأسعى لأن تكون مصر دولة مدنية ديمقراطية حديثة.. صور
+                        </a>
+                    </td>
+                    <td>
+                        <img src="x15.jpg" alt="">
+                        <a
+                            href="https://www.youm7.com/story/2023/10/14/%D9%85%D8%B5%D8%B1%D8%B9-%D8%B3%D9%8A%D8%AF%D8%A9-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%B4%D8%AE%D8%B5%D9%8A%D9%86-%D8%A2%D8%AE%D8%B1%D9%8A%D9%86-%D8%A5%D8%AB%D8%B1-%D8%AA%D8%B5%D8%A7%D8%AF%D9%85-%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%D9%8A%D9%86-%D9%81%D9%89-%D8%A7%D9%84%D9%82%D8%B5%D8%A7%D8%B5%D9%8A%D9%86/6337941">
+                            مصرع سيدة وإصابة شخصين آخرين إثر تصادم سيارتين فى القصاصين بالإسماعيلية
+                        </a>
+                    </td>
+                </tr>
+                <tr class="trm">
+                    <td>
+                        <a
+                            href="https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%A7%D8%AC%D9%84%D8%A9/65/1">
+                            <img src="more.webp" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.youm7.com/Section/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/319/1">
+                            <img src="more.webp" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.youm7.com/Section/%D8%AD%D9%88%D8%A7%D8%AF%D8%AB/203/1">
+                            <img src="more.webp" alt="">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu.scrolled {
+  background-color: #f2f2f2;
+}
+
+.nav-menu .menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+
+.nav-menu .menu-bar li {
+  padding: 0 1rem;
+}
+
+.nav-menu .menu-bar li a {
+  color: #333333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-menu .menu-bar li a:hover {
+  color: #2b72fb;
+}
+
+.nav-menu .logo {
+  margin-right: 1.5rem;
+}
+
+.nav-menu .hamburger {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+<header id="nav-menu" class="nav-menu">
+  <div class="container">
+    <div class="nav-start">
+      <a class="logo" href="/">
+        <img src="logo.png" width="35" height="35" alt="Inc Logo" />
+      </a>
+      <nav class="menu">
+        <button id="hamburger" aria-expanded="false">
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+        <ul class="menu-bar">
+          <li><a class="nav-link" href="/">Home</a></li>
+          <li><a class="nav-link" href="/">About</a></li>
+          <li><a class="nav-link" href="/">Services</a></li>
+          <li><a class="nav-link" href="/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<script>
+const navMenu = document.querySelector("#nav-menu");
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > 100) {
+    navMenu.classList.add("scrolled");
+  } else {
+    navMenu.classList.remove("scrolled");
+  }
+});
+
+const hamburger = document.querySelector("#hamburger");
+const menuBar = document.querySelector(".menu-bar");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("active");
+  menuBar.classList.toggle("active");
+});
+
+menuBar.addEventListener("click", function (e) {
+  if (e.target.tagName === "A") {
+    hamburger.classList.remove("active");
+    menuBar.classList.remove("active");
+  }
+});
+</script>
+
+</body>
+</html>
